@@ -1,16 +1,16 @@
-from os import environ
+# Telegram Bot API credentials
+API_ID = 123456       # Replace with your actual API ID from Telegram's Developer portal
+API_HASH = "your_api_hash"  # Replace with your actual API hash from Telegram's Developer portal
+BOT_TOKEN = "your_bot_token"  # Replace with your actual Bot Token from BotFather
 
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+# MongoDB URI
+DB_URI = "mongodb+srv://your_user:your_password@cluster0.mongodb.net/mydb?retryWrites=true&w=majority"  # Replace with your actual MongoDB connection string
 
-# Make Bot Admin In Log Channel With Full Rights
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
-ADMINS = int(environ.get("ADMINS", ""))
+# Admin IDs for broadcasting messages or managing commands
+ADMINS = [123456789]  # Replace with your Telegram User ID(s)
 
-# Warning - Give Db uri in deploy server environment variable, don't give in repo.
-DB_URI = environ.get("DB_URI", "") # Warning - Give Db uri in deploy server environment variable, don't give in repo.
-DB_NAME = environ.get("DB_NAME", "vjjoinrequetbot")
+# Log Channel ID (the ID where logs will be posted)
+LOG_CHANNEL = -1001234567890  # Replace with your actual Log Channel ID
 
-# If this is True Then Bot Accept New Join Request 
-NEW_REQ_MODE = bool(environ.get('NEW_REQ_MODE', False))
+# The channel to which users must be subscribed for approval
+FORCE_CHANNEL = -1009876543210  # Example: -1009876543210 (replace with your actual channel ID)
