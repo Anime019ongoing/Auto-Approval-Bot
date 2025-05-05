@@ -1,5 +1,5 @@
-pyrofork==2.3.48
-Tgcrypto
+pyrogram==2.3.48
+tgcrypto
 motor
 aiohttp
 Flask==1.1.2
